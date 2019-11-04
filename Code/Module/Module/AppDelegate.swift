@@ -19,16 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         LibLog.INIT()
         
-        Log.Trace(["":""])
-        
-        Log.Info(["","",""])
-        
-        Log.Error(123, "a", ["",""])
-        
-        Log.Api(api: "/user/login", method: .POST, process: .Request, items: ["username":"131", "passcode":"123"])
-        
-        Log.Api(api: "/user/login", method: .POST, process: .Response, items: ["code":"0", "msg":"success"], level: .Error)
-        
         return true
     }
     

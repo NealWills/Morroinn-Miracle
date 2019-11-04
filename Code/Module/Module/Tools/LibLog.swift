@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Log
 
 
 class LibLog: NSObject {
@@ -14,6 +15,7 @@ class LibLog: NSObject {
     class func INIT() {
         #if DEBUG
         Log.open = .Open
+        Log.minimunLevel = .Trace
         #else
         Log.open = .Close
         #endif

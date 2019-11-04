@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,7 @@
 		08622189236FC63200227AE9 /* ModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08622188236FC63200227AE9 /* ModuleTests.swift */; };
 		08622194236FC63200227AE9 /* ModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08622193236FC63200227AE9 /* ModuleUITests.swift */; };
 		086221A6236FC77F00227AE9 /* LibLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221A5236FC77F00227AE9 /* LibLog.swift */; };
-		086221B2236FCA9700227AE9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221AF236FCA9700227AE9 /* Log.swift */; };
-		086221B3236FCA9700227AE9 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221B0236FCA9700227AE9 /* LogManager.swift */; };
-		086221B4236FCA9700227AE9 /* LogEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221B1236FCA9700227AE9 /* LogEnums.swift */; };
+		086221BD236FE95100227AE9 /* Log in Frameworks */ = {isa = PBXBuildFile; productRef = 086221BC236FE95100227AE9 /* Log */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +50,6 @@
 		08622193236FC63200227AE9 /* ModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleUITests.swift; sourceTree = "<group>"; };
 		08622195236FC63200227AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086221A5236FC77F00227AE9 /* LibLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibLog.swift; sourceTree = "<group>"; };
-		086221AF236FCA9700227AE9 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		086221B0236FCA9700227AE9 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
-		086221B1236FCA9700227AE9 /* LogEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086221BD236FE95100227AE9 /* Log in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +133,9 @@
 		086221A4236FC76A00227AE9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				086221AE236FCA9700227AE9 /* Log */,
 				086221A5236FC77F00227AE9 /* LibLog.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		086221AE236FCA9700227AE9 /* Log */ = {
-			isa = PBXGroup;
-			children = (
-				086221AF236FCA9700227AE9 /* Log.swift */,
-				086221B0236FCA9700227AE9 /* LogManager.swift */,
-				086221B1236FCA9700227AE9 /* LogEnums.swift */,
-			);
-			path = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +155,7 @@
 			);
 			name = Module;
 			packageProductDependencies = (
+				086221BC236FE95100227AE9 /* Log */,
 			);
 			productName = Module;
 			productReference = 0862216E236FC63100227AE9 /* Module.app */;
@@ -244,6 +230,7 @@
 			);
 			mainGroup = 08622165236FC63100227AE9;
 			packageReferences = (
+				086221BB236FE95100227AE9 /* XCRemoteSwiftPackageReference "Log" */,
 			);
 			productRefGroup = 0862216F236FC63100227AE9 /* Products */;
 			projectDirPath = "";
@@ -289,10 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				086221A6236FC77F00227AE9 /* LibLog.swift in Sources */,
-				086221B4236FCA9700227AE9 /* LogEnums.swift in Sources */,
-				086221B3236FCA9700227AE9 /* LogManager.swift in Sources */,
 				08622176236FC63100227AE9 /* ViewController.swift in Sources */,
-				086221B2236FCA9700227AE9 /* Log.swift in Sources */,
 				08622172236FC63100227AE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		086221BB236FE95100227AE9 /* XCRemoteSwiftPackageReference "Log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/Nealios/Log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		086221BC236FE95100227AE9 /* Log */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 086221BB236FE95100227AE9 /* XCRemoteSwiftPackageReference "Log" */;
+			productName = Log;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08622166236FC63100227AE9 /* Project object */;
 }
