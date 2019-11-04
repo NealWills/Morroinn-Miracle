@@ -1,5 +1,5 @@
 //
-//  SystemAttributeGrowing.swift
+//  SystemAttributeOrigin.swift
 //  Module
 //
 //  Created by Neal on 2019/11/4.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SystemAttributeGrowing: NSObject {
+class SystemAttributeOrigin: NSObject {
 
+    
     var hp: Float = 0
     
     var mp: Float = 0
@@ -24,5 +25,4 @@ class SystemAttributeGrowing: NSObject {
         self.attack = attack
         self.defense = defense
     }
-    
 }

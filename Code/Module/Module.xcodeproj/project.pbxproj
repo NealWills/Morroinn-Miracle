@@ -19,8 +19,11 @@
 		086221C3236FEA4E00227AE9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 086221C2236FEA4E00227AE9 /* Alamofire */; };
 		086221C5236FEAEF00227AE9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221C4236FEAEF00227AE9 /* API.swift */; };
 		086221C7236FEC5200227AE9 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221C6236FEC5200227AE9 /* HttpMethod.swift */; };
-		086221CB23702DD800227AE9 /* SystemAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221CA23702DD800227AE9 /* SystemAttribute.swift */; };
+		086221CB23702DD800227AE9 /* SystemAttributeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221CA23702DD800227AE9 /* SystemAttributeBase.swift */; };
 		086221CD23702E0200227AE9 /* SystemAttributeGrowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221CC23702E0200227AE9 /* SystemAttributeGrowing.swift */; };
+		086221CF23702F6C00227AE9 /* SystemAttributeOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221CE23702F6C00227AE9 /* SystemAttributeOrigin.swift */; };
+		086221D12370377500227AE9 /* SystemAttributeExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221D02370377500227AE9 /* SystemAttributeExp.swift */; };
+		086221D323704B7A00227AE9 /* SystemAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086221D223704B7A00227AE9 /* SystemAttribute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,11 @@
 		086221A5236FC77F00227AE9 /* LibLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibLog.swift; sourceTree = "<group>"; };
 		086221C4236FEAEF00227AE9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		086221C6236FEC5200227AE9 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		086221CA23702DD800227AE9 /* SystemAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttribute.swift; sourceTree = "<group>"; };
+		086221CA23702DD800227AE9 /* SystemAttributeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttributeBase.swift; sourceTree = "<group>"; };
 		086221CC23702E0200227AE9 /* SystemAttributeGrowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttributeGrowing.swift; sourceTree = "<group>"; };
+		086221CE23702F6C00227AE9 /* SystemAttributeOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttributeOrigin.swift; sourceTree = "<group>"; };
+		086221D02370377500227AE9 /* SystemAttributeExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttributeExp.swift; sourceTree = "<group>"; };
+		086221D223704B7A00227AE9 /* SystemAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAttribute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +192,11 @@
 		086221C923702DBB00227AE9 /* Attribute 属性 */ = {
 			isa = PBXGroup;
 			children = (
-				086221CA23702DD800227AE9 /* SystemAttribute.swift */,
+				086221D223704B7A00227AE9 /* SystemAttribute.swift */,
+				086221CA23702DD800227AE9 /* SystemAttributeBase.swift */,
 				086221CC23702E0200227AE9 /* SystemAttributeGrowing.swift */,
+				086221CE23702F6C00227AE9 /* SystemAttributeOrigin.swift */,
+				086221D02370377500227AE9 /* SystemAttributeExp.swift */,
 			);
 			path = "Attribute 属性";
 			sourceTree = "<group>";
@@ -332,12 +341,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				086221A6236FC77F00227AE9 /* LibLog.swift in Sources */,
+				086221D323704B7A00227AE9 /* SystemAttribute.swift in Sources */,
 				08622176236FC63100227AE9 /* ViewController.swift in Sources */,
 				086221CD23702E0200227AE9 /* SystemAttributeGrowing.swift in Sources */,
 				086221C7236FEC5200227AE9 /* HttpMethod.swift in Sources */,
 				086221C5236FEAEF00227AE9 /* API.swift in Sources */,
 				08622172236FC63100227AE9 /* AppDelegate.swift in Sources */,
-				086221CB23702DD800227AE9 /* SystemAttribute.swift in Sources */,
+				086221CB23702DD800227AE9 /* SystemAttributeBase.swift in Sources */,
+				086221D12370377500227AE9 /* SystemAttributeExp.swift in Sources */,
+				086221CF23702F6C00227AE9 /* SystemAttributeOrigin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
